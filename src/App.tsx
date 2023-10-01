@@ -17,7 +17,7 @@ function App() {
     setNum(num / 100)
   }
 
-  const numberInput = (e) => {
+  const numberInput = (e: any) => {
     const input = e.target.value
     if (num === 0) {
       setNum(input)
@@ -26,7 +26,7 @@ function App() {
     }
   }
 
-  const operatorHandler = (e) => {
+  const operatorHandler = (e: any) => {
     const operatorInput = e.target.value
     setOperator(operatorInput)
     setFirstNum(num)
